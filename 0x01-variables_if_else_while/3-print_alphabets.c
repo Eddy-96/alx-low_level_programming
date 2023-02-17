@@ -2,27 +2,30 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Sucess/correct)
  */
-
 int main(void)
+
 {
-	char c;
+char lower_case;
+char upper_case;
 
-	char d;
+for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
+{
+putchar(lower_case);
+}
 
-	c = 'a';
-	d = 'A';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
-		}
-	while
-		(d <= 'z') {
-			putchar(d);
-			d++;
-		}
-	putchar('\n');
-	return (0);
+
+for (upper_case = 'A'; upper_case <= 'Z'; upper_case++)
+{
+putchar(upper_case);
+}
+
+
+
+
+putchar ('\n');
+
+return (0);
+
 }
